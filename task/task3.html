@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+        #left,
+		#right {
+			float: left;
+			width: 200px;
+			background-color: white;
+			padding: 10px;
+		}
+		#left img{
+			float: left;
+			width: 80px;
+			height: 80px;
+		}       
+		#right{
+		    float: right;
+		}
+		#right div{
+			margin-top: 20px;
+			margin-left: 60px;
+			background-color: red;
+			width: 50px;
+			height: 50px;
+		}       
+		#main {
+			margin: 0 230px;
+			background: red;
+			height: 200px;
+		}
+        
+        #parent{
+        	width: 800px;
+        	background-color: #ccc;
+        	padding: 20px;
+        }
+        #parent:after{
+        	clear: both;
+        	content: '';
+        	display: block;
+        }
+	</style>
+</head>
+<body>
+	<div id="parent">
+		<div id="left">
+			<img src="img/1.jpg">
+			<p>火星团队</p>
+		</div>
+	    <div id="right">
+	    	<div></div>
+	    	<div></div>
+	    	<div></div>
+	    </div>
+	    <div id="main">
+	        《火星情报局》[1]  是由优酷与银河酷娱联合出品的首档用综艺手法检验全民新奇发现的网络涵综（汪涵首档网综），节目于2016年4月8日起每周五晚优酷独家播出。汪涵担任局长，薛之谦、宁静、张宇、周杰、马可、刘维、钱枫、田源、沈梦辰、郭雪芙、汪聪、王以纶等明星为嘉宾。第一季已完结。
+	    </div>
+	</div>
+    改变宽度：<input type="range" min="800" max="1200" step="50" value="800" id="range">
+    <script type="text/javascript">
+    	var range = document.getElementById('range');
+    	// console.log(range);
+    	var parent = document.getElementById('parent');
+    	range.onchange = function () {
+    		parent.style.width = range.value + 'px';
+    	}
+    </script>
+</body>
+</html>
