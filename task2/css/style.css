@@ -1,0 +1,39 @@
+*{
+		margin: 0;
+		padding: 0;
+	}
+    body{
+    	background-color: #ccc;
+    }
+    header{
+    	background-color: black;
+    }
+    #header-logo{
+    	display: inline-block;
+    	padding: 15px;
+    }
+    #header-logo img{
+    	width: 20px;
+    	height: 20px;
+    }
+    #header-list{
+    	display: inline-block;
+        float: right;
+        margin: 15px;
+    }
+    .header-item{
+        color: white;
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 20px;
+        /*text-align: right;*/
+    }
+    .content-block{
+    	width: 800px;
+    	margin: 10px auto;
+    	background-color: white;
+    	padding: 20px;
+    }
+    ol{
+    	margin-left: 20px;
+    }
