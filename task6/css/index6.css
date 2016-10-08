@@ -1,0 +1,34 @@
+*{ padding:0; margin:0}
+body{ background:#5d5d5d}
+
+#boy{ width:980px; height:1450px; background:#FFFFFF; margin:0 auto; margin-top:50px}
+
+#boy #top{ width:892px; height:63px; margin:0 auto}
+#boy #top #t1{ width:110px; height:61px; background:#d45d4c; font-size:12px; color:#ffffff; font-family:ºÚÌå; float:left; line-height:100px}
+#boy #top #t2{ font-family:ºÚÌå; font-size:12px; color:#d45d5c; float:left; width:50px; height:15px; margin-top:42px; margin-left:730px}
+#boy #top #t3{ width:892px; height:2px; background:#928e8c; float:left}
+
+#boy #z1{ height:301px; width:892px; margin:0 auto; margin-top:36px;}
+#boy #z1 #z11{ height:301px; width:641px; background-image:url(../img/1.jpg); float:left}
+#boy #z1 #z12{ height:299px; width:203px; float:left; margin-left:40px}
+#boy #z1 #z12 #z121{ width:203px; height:2px; background:#cc8091;}
+
+#boy #z2{ width:641px; height:200px; margin-top:50px; margin-left:42px}
+#boy #z21{ height:200px; width:250px; float:left}
+#boy #z22{ height:200px; width:210px; margin-left:10px; float:left;}
+
+#boy #z3{ height:630px; width:415px; margin-left:42px; margin-top:50px; float:left}
+#boy #z3 #z31{ width:413px; height:450px; margin-top:30px;font-size:12px; color:#767777; line-height:16px; font-family:'ËÎÌå'; 
+		float:left; }
+#boy #z3 #z31 #z311{width:167px; height:288px; float:right; padding-top:20px; padding-left:20px; padding-bottom:20px }
+
+#boy #z4{ background-image:url(../img/3.jpg); width:458px; height:275px; float:left; margin-top:50px; margin-left:24px}
+#boy #z4 #z41{ width:458px; height:61px; margin-top:214px; }
+
+#boy #z5{ width:458px; height:318px; background:#eeedd6; float:left; margin-top:50px; margin-left:24px}
+#boy #z5 #z51{ width:458px; height:158px; float:left}
+#boy #z5 #z52{ width:260px; height:160px; background:#d45d5c; float:left}
+#boy #z5 #z53{ width:188px; height:160px; float:left; padding-left:10px}
+
+#boy #dow{ width:892px; height:61px; float:left; margin-top:56px; margin-left:44px }/* CSS Document */
+
