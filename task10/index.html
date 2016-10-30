@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	    *{
+	    	margin: 0;
+	    	padding: 0;
+	    }
+        #space{
+        	width: 600px;
+        	height: 599px;
+        	background-color: black;
+        	position: relative;
+        	border-top: 1px solid white;
+        	display: inline-block;
+        }
+        .earth{
+        	width: 200px;
+        	height: 200px;
+        	border-radius: 100px;
+        	background-color: blue;
+        	margin-left: 200px;
+        	margin-top: 200px;
+        }
+        .controller{
+        	display: inline-block;
+        	width: 500px;
+        	border: 1px solid black;
+        	vertical-align: top;
+        }
+        #airshipone{
+            width: 80px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #ccc;
+            position: absolute;
+            left: 260px;
+            top: 450px;
+        	text-align: center;
+            /*transform: rotate(30deg);*/
+        }
+        .airship{
+            width: 80px;
+            height: 40px;
+            border-radius: 20px;
+            position: absolute;
+            background-color: yellow;
+            /*left: 260px;*/
+            /*transform: rotate(30deg);*/
+        }
+        #power{
+        	width: 100%;
+        	height: 100%;
+        	border-radius: 20px;
+        	background-color: green;
+        	color: black;
+        }
+	</style>
+</head>
+<body>
+	<div id="space">
+		<div class="earth"></div>
+		<div id="airshipone">
+			<div id="power"></div>
+		</div>
+	</div>
+	<div class="controller">
+	    <div><button id="create">create</button></div>
+		<div id="airship-one-controller">
+			<span>对一号飞船下达指令：</span>
+			<button>开始飞行</button>
+			<button>停止飞行</button>
+			<button>销毁</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</body>
+</html>

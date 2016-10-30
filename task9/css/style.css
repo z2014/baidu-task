@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0
+}
+li{
+	list-style-type: none;
+}
+a{
+	color: white;
+}
+.top{
+	width: 100%;
+    height: 56px;
+    background-color: rgb(34,138,191);
+    position: relative;
+}
+.top-logo{
+	width: 36px;
+	height: 36px;
+	background-color: white;
+	position: relative;
+	top: 10px;
+	left: 50px;
+	display: inline-block;
+}
+.inside-div{
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border: 3px solid rgb(34,138,191);
+	position: absolute;
+	bottom: -3px;
+	right: -3px;
+}
+.signIn{
+	float: right;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+#search-box{
+	width: 340px;
+	height: 30px;
+	border-radius: 25px;
+}
+.sign-text{
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+.left{
+	display: inline-block;
+	width: 360px;
+	height: 800px;
+	background-color: rgb(42,46,61);
+	vertical-align: top;
+}
+.user{
+	height: 200px;
+	position: relative;
+}
+.head-out{
+	width: 58px;
+	height: 58px;
+	border-radius: 29px;
+	border: 1px solid white;
+	position: relative;
+	top: 35px;
+	left: 80px;
+	display: inline-block;
+}
+.head-in{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: rgb(185,186,190);
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
+.yourName{
+	position: relative;
+	color: white;
+	font-size: 18px;
+	left: 100px;
+	display: inline-block;
+    top: 10px;
+}
+.infor{
+	color: rgb(103,119,139);
+	display: inline-block;
+	width: 38px;
+	padding: 0 30px;
+	text-align: center;
+	position: relative;
+	left: -65px;
+	top: 90px;
+	font-weight: bold;
+
+}
+.infor:last-child{
+	border-left: 1px solid rgb(103,119,139);
+}
+.headline{
+	color: rgb(110,128,150);
+	font-size: 18px;
+	font-weight: bold;
+}
+#list0{
+	width: 100%;
+}
+.item-parent{
+	width: 100%;
+}
+.item1{
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 20px 0 20px 40px;
+}
+.list1{
+	padding: 10px 0 0 80px;
+}
+.list2{
+	margin: 10px 0 0 40px;
+}
+.list1{
+	display: none;
+}
+.list2{
+	display: none;
+}
+.right{
+    display: inline-block;
+    width: 73%;
+}
