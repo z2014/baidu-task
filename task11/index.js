@@ -13,35 +13,45 @@ function NewForm() {
 	this.type = setType("type");
 	this.isRequired = setType("require");
 	this.label = setType("label");
+	valid(this.isRequired);
+	// this.valid = function(val) {
+	// 	if (val) {
+	// 		this.onchange = function() {
+	// 			console.log(this.value);
+	// 			if (this.value == null) {
+	// 				console.log(1);
+	// 			}
+	// 		}
+	// 	}
+	// };
+	// this.valid(this.isRequired);
 }
 
 function show() {
 	document.getElementById('option').style.display = 'block';
 }
+
 document.getElementById('optionText').onkeypress = function (event) {
 	var content = document.getElementById('content');
 	var ev = event || window.event;
 	var text = ev.target.value;
 	var arr = [];
 	if (ev.keyCode == 32) {
-        	var span = document.createElement('span');
-	        arr = text.split(" ");
-	        span.innerHTML = arr[arr.length-1];
-	        span.className = 'span';
-	        content.appendChild(span);
-	        span.onclick = function() {
-	        	content.removeChild(span);
-	        }
-	        console.log(arr);
-	        // Promise.resolve(span).then(function(span){span.onclick = function() {
-	        // 	content.removeChild(span);
-	        // }}); 
+    	var span = document.createElement('span');
+        arr = text.split(" ");
+        span.innerHTML = arr[arr.length-1];
+        span.className = 'span';
+        content.appendChild(span);
+        span.onclick = function() {
+        	content.removeChild(span);
+        }
+        console.log(arr);
+        // Promise.resolve(span).then(function(span){span.onclick = function() {
+        // 	content.removeChild(span);
+        // }}); 
 	}
 }
-// function add() {
-// 	var span = document.getElementsByClassName('span');
 
-// }
 var btn = document.getElementById('submit');
 btn.onclick = function() {
 	var component = document.getElementById('component');
@@ -54,23 +64,19 @@ btn.onclick = function() {
     input.required = form.isRequired;
     component.appendChild(label);
     component.appendChild(input);
+    // Promise.resolve(form).then(function(form){
+    // 	form.onclick = function() {
+    // 		console.log(this.value);
+    // 	};
+    // }).catch(function(err){
+    // 	console.log(err);
+    // });
 }
-// function isRequire() {
-//     var isNess = true;
-//     var bool = document.getElementsByName('require');
-//     if (bool[1].checked) {
-//     	isNess = false;
-//     }
-//     return isNess;
-// }
-// function setLabel() {
-// 	var labels = document.getElementsByName('label');
-// 	var label;
-// 	for (var i = 0; i < labels.length; i++) {
-// 		if (labels[i].checked) {
-// 			label = labels[i].value;
-// 		}
-// 	}
-// 	console.log(label);
-// 	return label;
-// }
+function valid(val) {
+	if (val) {
+		this.onchange = function() {
+			console.log(this);
+			console.log(this.value);
+		}
+	}
+}
